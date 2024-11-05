@@ -10,6 +10,7 @@ public class SoundLibrary : MonoBehaviour
     public List<string> sound_names = new List<string>();
     private Dictionary<string, AudioClip> lib = new Dictionary<string, AudioClip>();
 
+    // Clip spawns with file name - autofill sound_name list instead.
     void Start()
     {
         int index = 0;
@@ -17,8 +18,6 @@ public class SoundLibrary : MonoBehaviour
             lib.Add(sound_names[index], clip);
             index++;
         }
-
-        
     }
 
 
